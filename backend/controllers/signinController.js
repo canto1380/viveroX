@@ -4,17 +4,19 @@ const bcrypt = require('bcrypt')
 
 exports.signin = async(req,res,next) =>{
     let body = req.body;
+    console.log(body)
     try {
         User.findOne({email:body.email},(err, user) =>{
             if(!user){
                 console.log('Usuario no valido')
                 next()
-            } else if( body.clave !== user.clave){
+            } else 
+            if( body.clave !== user.clave){
                 console.log('Clave no valida')
                 next()
             } else{
                 console.log("coincide")
-                let token = jwt.sign({_id:user._id},'secret', {expireIn: '12h'})
+                let token = jwt.sign({_id:user._id},'secret', {expiresIn: '24h'})
                 res.json({
                     ok: true, token, _id: user._id
                 })

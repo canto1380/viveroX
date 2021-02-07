@@ -1,0 +1,205 @@
+/***** GENERAL *****/
+/** Paleta de colores **/
+.color1 {
+    color: #f0f2f5;
+}
+.bg-color1 {
+    background-color: #f0f2f5;
+}
+.color2 {
+    color: #97cb52;
+}
+.bg-color2 {
+    background-color: #97cb52;
+}
+
+/** Margin top para el elemento siguiente al navbar **/
+.mt-navbar{
+    margin-top: 98px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Palanquin Dark', sans-serif;
+}
+/** Hover botones verdes **/
+.color1:hover{
+    font-weight: bold;
+    color: white;
+}
+
+/** Fuentes **/
+.f-pala{
+    font-family: 'Palanquin Dark', sans-serif;
+}
+
+/*** NAV ***/
+/** Tamano logo Navbar **/
+.icon-nav {
+    width: 200px;
+}
+
+.iconUser{
+    display: flex;
+    border-radius: 50%;
+    background-color: 
+    #97CB52;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-bottom: 0;
+}
+.aaaa {
+    display: flex;
+    
+    align-items: center;
+}
+.aq:hover{
+    background-color:rgb(230, 230, 230);
+}
+.button-formato{
+    border: 0px;
+    background-color: rgba(240, 255, 255, 0);
+}
+
+/*** FOOTER ***/
+/** Tamaño de los iconos de redes sociales y contacto **/
+.icon-size{
+    width: 30px;
+}
+/** Tamano logo footer **/
+.icon-footer{
+    width: 150px;
+}
+
+/*** MAIN ***/
+/** Carrousel **/
+.carrousel-height{
+    object-fit: cover;
+    height: 600px;
+}
+/** Tarjetas **/
+.card:hover{
+    position: relative;
+    bottom: 3px;
+    right: 3px;
+    background-color: lightgreen;
+    transition: 2000ms;   
+}
+/** Listas Categorias**/
+.list-style{
+    list-style: none;
+}
+.list-style-hover:hover{
+    font-weight: 600;
+    transition: 500ms;
+}
+
+/*** PRODUTOS **/
+/* Navbar Productos */
+.navProductos{
+    position: relative;
+    z-index: 100;
+}
+
+/*** LOGIN ***/
+.alternativeLogin{
+    display: flex;
+    flex-direction: column;
+}
+.btnIniciar{
+    width: 300px;
+}
+
+.logFb{
+    width: 300px;
+    background-color: rgb(15,144,243);
+    color: #f2f4f5;
+    font-family: 'Palanquin Dark', sans-serif;
+}
+.logGg {
+    width: 300px;
+    background-color: rgb(239,239,239);
+    color:#3f514c;
+    font-family: 'Palanquin Dark', sans-serif;
+}
+.alternative{
+    justify-content: space-between;
+}
+.loginImg{
+    opacity: 0.8;
+}
+.imgText{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+/****** Formato mediano ******/
+    @media all and (min-width: 768px) and (max-width: 991px){
+    /** Para adpatar el titulo principal **/
+    .fr-titulo{
+        font-size: 40px;
+    }
+    /** Carrousel responsive **/
+    .carrousel-height{
+        object-fit: cover;
+        height: 350px;
+    }
+    .icon-nav {
+        width: 200px;
+    }
+}
+/****** Formato pequeño ******/
+    @media screen and (max-width:767px){
+    /** Para adpatar el titulo principal **/
+    .fr-titulo{
+        font-size: 40px;
+    }
+    /** Centrado de elementos **/
+    .centrar-elementos{
+        text-align: center;
+    }
+
+    /** Carrousel responsive **/
+    .carrousel-height{
+        object-fit: cover;
+        height: 250px;
+    }
+    /** Elemento oculto **/
+    .img-hidden{
+        display: none;
+    }
+    .icon-nav {
+        width: 120px;
+    }
+    /** Margin top para el elemento siguiente al navbar **/
+    .mt-navbar{
+    margin-top: 69px;
+    }
+    /** Nav productos **/
+    #sm-nav{
+    justify-content: center;
+    padding-left: 10px;
+    }
+    /** login ***/
+    .btnIniciar{
+        width: 100%;
+    }
+    .logFb{
+        width: 100%;
+        background-color: rgb(15,144,243);
+        color: #f2f4f5;
+        font-family: 'Palanquin Dark', sans-serif;
+    }
+    .logGg {
+        width: 100%;
+        background-color: rgb(239,239,239);
+        color:#3f514c;
+        font-family: 'Palanquin Dark', sans-serif;
+    }
+    .imgLog{
+        display: none;
+    }
+
+}

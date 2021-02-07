@@ -27,5 +27,10 @@ module.exports = function() {
         plantasController.eliminarPlanta
     )
 
+    router.post('/nuevo', (req,res) =>{
+        console.log(req.file)
+        res.send('si')
+    })
+
     return router;
 }
